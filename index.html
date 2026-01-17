@@ -311,7 +311,39 @@
             .hero h1 { font-size: 40px; }
             .hero p { font-size: 18px; }
             .about-content { grid-template-columns: 1fr; }
-            nav ul { gap: 15px; }
+            nav ul { gap: 15px; font-size: 14px; }
+            nav .container { padding: 0 15px; }
+            section { padding: 60px 15px; }
+            h2 { font-size: 32px; }
+            .projects-grid { grid-template-columns: 1fr; }
+            .contact-info { flex-direction: column; }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 { font-size: 32px; }
+            .hero p { font-size: 16px; }
+            nav ul { gap: 10px; font-size: 13px; }
+            nav .logo { font-size: 20px; }
+            .cta-button { padding: 12px 30px; font-size: 14px; }
+            h2 { font-size: 28px; }
+            button { padding: 20px; font-size: 18px; }
+            #comingSoonModal > div { 
+                padding: 30px 20px; 
+                margin: 20px;
+                max-width: 90%;
+            }
+            #comingSoonModal h2 { font-size: 28px; }
+            #comingSoonModal p { font-size: 16px; }
+        }
+
+        /* Touch device improvements */
+        @media (hover: none) {
+            button:hover {
+                transform: none;
+            }
+            button:active {
+                transform: scale(0.95);
+            }
         }
     </style>
 </head>
